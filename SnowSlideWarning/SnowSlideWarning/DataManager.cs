@@ -11,6 +11,7 @@ using System.Windows.Shapes;
 using HtmlAgilityPack;
 using Microsoft.Phone.Controls;
 using System.Collections.Generic;
+using System.Xml;
 
 namespace SnowSlideWarning
 {

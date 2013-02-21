@@ -15,11 +15,10 @@ namespace SnowSlideWarning
 {
     public class ItemViewModel : INotifyPropertyChanged
     {
-        private string _lineOne;
-        /// <summary>
-        /// Exemple de propriété ViewModel ; cette propriété est utilisée dans la vue pour afficher sa valeur à l'aide d'une liaison.
-        /// </summary>
-        /// <returns></returns>
+        private string _lineOne,_lineTwo,_lineThree;
+
+        #region Accessors
+
         public string LineOne
         {
             get
@@ -36,11 +35,6 @@ namespace SnowSlideWarning
             }
         }
 
-        private string _lineTwo;
-        /// <summary>
-        /// Exemple de propriété ViewModel ; cette propriété est utilisée dans la vue pour afficher sa valeur à l'aide d'une liaison.
-        /// </summary>
-        /// <returns></returns>
         public string LineTwo
         {
             get
@@ -57,11 +51,6 @@ namespace SnowSlideWarning
             }
         }
 
-        private string _lineThree;
-        /// <summary>
-        /// Exemple de propriété ViewModel ; cette propriété est utilisée dans la vue pour afficher sa valeur à l'aide d'une liaison.
-        /// </summary>
-        /// <returns></returns>
         public string LineThree
         {
             get
@@ -77,6 +66,8 @@ namespace SnowSlideWarning
                 }
             }
         }
+
+        #endregion Accessors
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
